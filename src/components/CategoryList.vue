@@ -1,8 +1,5 @@
 <template>
-    <v-parallax
-        src="https://thumbs.dreamstime.com/b/greek-food-background-traditional-different-greek-dishes-set-greek-food-background-traditional-different-greek-dishes-set-top-view-178761927.jpg"
-        height="420"
-    >
+    <v-parallax src="/images/category-bg.jpg" height="420">
         <div class="p-10">
             <v-sheet class="mx-auto bg-transparent text-5xl" elevation="8">
                 <v-slide-group class="pa-4" show-arrows>

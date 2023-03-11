@@ -1,8 +1,5 @@
 <template>
-    <v-parallax
-        src="https://i.pinimg.com/originals/d3/6d/46/d36d462db827833805497d9ea78a1343.jpg"
-        height="630"
-    >
+    <v-parallax src="/images/random-bg.jpg" height="630">
         <div class="flex gap-10 p-10">
             <div class="flex-1">
                 <v-card width="400" theme="dark">
@@ -124,6 +121,4 @@ const onRandomMeal = async () => {
     const { data } = await axiosClient("random.php");
     meal.value = data?.meals[0];
 };
-
-// setInterval(onRandomMeal, 4000);
 </script>
