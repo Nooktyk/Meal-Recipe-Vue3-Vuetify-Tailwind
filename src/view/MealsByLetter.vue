@@ -1,15 +1,6 @@
 <template>
     <Header title="Search by First Letter of Meals" icon="mdi-alpha-a-circle" />
 
-    <div class="flex items-center">
-        <v-icon icon="mdi-bus-articulated-front" color="primary"></v-icon>
-        <v-breadcrumbs :items="breadcrumbs">
-            <template v-slot:title="{ item }">
-                {{ item.title.toUpperCase() }}
-            </template>
-        </v-breadcrumbs>
-    </div>
-
     <div class="flex flex-col gap-5">
         <div class="p-2 rounded-lg text-xl">
             <v-tabs v-model="tab" center-active color="primary">
@@ -26,7 +17,7 @@
             </v-chip>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
             <MealDetail v-for="meal of meals" :key="meal.idMeal" :meal="meal" />
         </div>
 
@@ -49,17 +40,6 @@ import Header from "../components/Header.vue";
 const tab = ref("A");
 const page = ref(1);
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-const breadcrumbs = ref([
-    {
-        title: "Home",
-        disabled: false,
-        href: "/",
-    },
-    {
-        title: "Letter",
-        disabled: true,
-    },
-]);
 
 const letter = computed(() => store.state.letter);
 const total = computed(() => store.state.mealsByLetter.length);
@@ -70,6 +50,10 @@ const meals = computed(() =>
 watch(tab, () => {
     store.dispatch("searchMealsByLetter", tab.value);
     page.value = 1;
+});
+
+watch(page, () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 onMounted(() => {

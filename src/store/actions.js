@@ -28,7 +28,3 @@ export function searchMealsByIngredient({ commit }, ingredient) {
         commit("setMealsByIngredient", data.meals);
     });
 }
-
-export function getRating({ state }) {
-    return state.rating;
-}

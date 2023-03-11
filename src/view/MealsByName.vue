@@ -12,7 +12,7 @@
             </div>
         </v-container>
 
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
             <MealDetail v-for="meal of meals" :key="meal.idMeal" :meal="meal" />
         </div>
 
@@ -47,6 +47,10 @@ const search = computed(() => store.state.searchValue);
 watch(keyword, () => {
     store.dispatch("searchMeals", keyword.value);
     page.value = 1;
+});
+
+watch(page, () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 onMounted(() => {

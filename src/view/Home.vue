@@ -1,9 +1,11 @@
 <template>
-    <BannerList />
-    <RandomMeal />
-    <Reccomandation />
-    <CategoryList />
-    <AreaList />
+    <div class="flex flex-col gap-5">
+        <BannerList />
+        <RandomMeal />
+        <Reccomandation />
+        <CategoryList />
+        <AreaList />
+    </div>
 </template>
 
 <script setup>

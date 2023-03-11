@@ -22,8 +22,8 @@
                 </v-tab>
                 <v-tab value="categories">
                     <router-link :to="{ name: 'categories' }"
-                        >Categories</router-link
-                    >
+                        >Categories
+                    </router-link>
                 </v-tab>
             </v-tabs>
 

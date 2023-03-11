@@ -1,14 +1,15 @@
 <template>
-    <div class="w-full flex py-5">
-        <div style="width: 950px" class="flex items-center justify-center">
+    <div class="flex px-10 gap-20 justify-center items-center">
+        <div>
             <iframe
-                width="700"
-                height="394"
-                src="https://www.youtube.com/embed/FTociictyyE?autoplay=1&mute=1"
+                width="750"
+                height="424"
+                src="https://www.youtube.com/embed/zhI7bQyTmHw?autoplay=1&mute=1"
             ></iframe>
         </div>
+
         <div>
-            <v-card max-width="500" class="mx-auto">
+            <v-card max-width="400">
                 <v-container>
                     <v-row dense>
                         <v-col cols="12">
@@ -54,11 +55,7 @@
                                         </v-card-actions>
                                     </div>
 
-                                    <v-avatar
-                                        class="ma-3"
-                                        size="125"
-                                        rounded="0"
-                                    >
+                                    <v-avatar class="ma-3" size="125">
                                         <v-img
                                             src="https://1.bp.blogspot.com/-j025bTtVQaQ/XrpI0OErYeI/AAAAAAAAD24/sWZ5RtrscvcskZNcR4QeToTfNgddY6NMQCLcBGAsYHQ/s1600/Best%2B-%2BLetter%2BA%2BName%2BDp%2BImages%2BFor%2BWhatsapp%2B%2B%25282%2529.jpg"
                                         ></v-img>

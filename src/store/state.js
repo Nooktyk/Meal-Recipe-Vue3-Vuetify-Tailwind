@@ -1,15 +1,9 @@
 export default {
     searchedMeals: [],
-    color: "#03A9F4",
+    color: "#795548",
     searchValue: "",
     mealsByLetter: [],
     mealsByIngredient: [],
     letter: "",
     ingredient: "",
-    rating: [
-        {
-            id: "52827",
-            rate: 5,
-        },
-    ],
 };

@@ -4,7 +4,7 @@
         height="679"
         hide-delimiter-background
         show-arrows="hover"
-        progress="info"
+        progress="primary"
         interval="3000"
     >
         <v-carousel-item

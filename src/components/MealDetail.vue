@@ -8,17 +8,12 @@
                 cover
             />
             <v-card-title>
+                <span class="mdi mdi-pasta"></span>
                 {{ meal.strMeal }}
             </v-card-title>
             <v-card-actions>
-                
                 <v-spacer></v-spacer>
-                <v-btn
-                    color="blue-grey"
-                    prepend-icon="mdi-book-information-variant"
-                >
-                    See More
-                </v-btn>
+                <v-btn color="blue-grey"> See More </v-btn>
             </v-card-actions>
         </v-card>
     </router-link>
@@ -28,12 +23,4 @@
 const props = defineProps({
     meal: {},
 });
-</script>
-
-<script>
-export default {
-    data: () => ({
-        show: false,
-    }),
-};
 </script>
